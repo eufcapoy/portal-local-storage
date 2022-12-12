@@ -214,7 +214,7 @@
     </div>
     <hr />
     <div class="signinform">
-      <form action="signout.html">
+      <form>
         <label>Name</label>
         <input type="text" name="username" id="username" placeholder="Username" required />
         <label>Password</label>
@@ -222,15 +222,15 @@
         <label>CMS Access</label>
           <select name="cms" id="cms" required>
             <option selected disabled hidden>Select Access Level</option>
-            <option value="Level 1" id = "Level 1">Access Level 1</option>
-            <option value="Level 2" id = "Level 2">Access Level 2</option>
-            <option value="Level 3" id = "Level 3">Access Level 3</option>
+            <option value="Level1">Access Level 1</option>
+            <option value="Level2">Access Level 2</option>
+            <option value="Level3">Access Level 3</option>
           </select>
-        <input type="submit" value="Submit" onclick="checkData()">
+        <input type="submit" value="Submit" onclick="return checkData()">
         <label class = "signin-footer">Don't have an account yet?</label><a href="signup.html">Create a free account</a>
       </form>
     </div>
     <footer>Copyright 2022 - Capoy</footer>
-    <script src="login.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
